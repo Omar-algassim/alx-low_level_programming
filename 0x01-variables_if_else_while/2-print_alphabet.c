@@ -8,8 +8,9 @@
 int main(void)
 {
 	char low;
-	while(low = 'a'; low <= 'z'; low++)
-		putchr(low);
+	low == 'a'
+	while( low <= 'z'; low++)
+		putchar(low);
 	putchar('\n');
 	
 	return(0);
