@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* main - print _putchar
+*main - print _putchar
 *
-* is written by omar 
+*is written by omar 
 *Return: 0
 */
 
