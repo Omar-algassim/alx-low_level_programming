@@ -5,7 +5,7 @@
 *_putchar - writes the character c to stdout
 *Return: returns nothing
 */
-void print_numbers(void);
+void print_numbers(void)
 
 {
 int number = 48;
