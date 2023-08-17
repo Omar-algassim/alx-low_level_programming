@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_line - print new line if it is not zero 
+ * print_line - print new line if it is not zero
  *
  * Return: Always 0
  */
