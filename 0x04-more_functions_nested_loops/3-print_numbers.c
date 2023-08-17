@@ -1,20 +1,16 @@
 #include "main.h"
-
 /**
- * print_numbers - print number from 0 to 9
- *_putchar - writes the character c to stdout
- * @c: The character to print
- * Return: always 0
- */
+*print_numbers - function that print all numbers from
+*0 to 9
+*
+*Return: returns nothing
+*/
 void print_numbers(void)
-int _putchar(char c)
 {
-	int i;
-
-	for (i = '0'; i <= '9'; i++)
-	{	
-		_putchar(i);
-	}
-	_putchar('\n');
-	return (0);
+int number = 48;
+for (number = 48; number < 58; number++)
+{
+_putchar(number);
+}
+_putchar(10);
 }
