@@ -14,8 +14,8 @@ while(c != '\0')
 {
 	c++;
 }
-c = j;
-for (i = j-1; i >= 0; i--)
+c = l;
+for (i = l-1; i >= 0; i--)
 {
 _putchar(s[i]);
 }
