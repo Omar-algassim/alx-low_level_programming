@@ -9,7 +9,7 @@
 
 void _puts(char *str)
 {
-str[7] = "stdout";
+*str[7] = "stdout";
 
 printf("%s\n", str);
 
