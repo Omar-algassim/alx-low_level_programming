@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main -rest the pointer to 98
+ * reset_to_98 - rest the pointer to 98
  * @n : pointer to varisable to update
  *written by omar
  * Return: nothing
