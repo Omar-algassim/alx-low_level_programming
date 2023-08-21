@@ -9,9 +9,8 @@
 
 void _puts(char *str)
 {
-char str[7] = "stdout";
+str[7] = "stdout";
 
 printf("%s\n", str);
 
-return (0);
 }
