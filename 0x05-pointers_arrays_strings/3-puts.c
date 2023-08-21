@@ -9,8 +9,12 @@
 
 void _puts(char *str)
 {
-*str[7] = "stdout";
+int i;
 
-printf("%s\n", str);
+for (i = 0; str[i]!= '\0'; i++)
+{
 
+_putchar('str[i]');
+}
+_putchar('\n');
 }
