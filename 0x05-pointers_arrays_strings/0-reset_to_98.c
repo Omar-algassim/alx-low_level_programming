@@ -8,7 +8,7 @@
  * Return: nothing
  */
 
-void reset_to_98(int *n);
+void reset_to_98(int *n)
 {
 	printf("the value of n:%p \n", n);
 	printf("the value of address n %p \n, n");
