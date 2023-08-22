@@ -17,7 +17,7 @@ c++;
 j = c;
 h = (j - 1) / 2;
 
-for (i = h; i <= c; i++)
+for (i = h + 1; i <= c; i++)
 {
 _putchar(str[i]);
 }
