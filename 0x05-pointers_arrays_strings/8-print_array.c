@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_array - print elemnts number in array
- * @a: name of array 
+ * @a: name of array
  * @n: number of elemnts
  * Return: aways 0
  */
