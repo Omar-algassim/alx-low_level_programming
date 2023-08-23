@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strcat : concantenates tow string
- * @str: string number one 
- * @dest: the string append in 
- * return:the value of dest
+ * _strcat - concantenates tow string
+ * @src: string number one
+ * @dest: the string append in
+ * Return:the value of dest
  */
 
 char *_strcat(char *dest, char *src)
