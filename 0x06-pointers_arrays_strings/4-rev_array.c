@@ -13,11 +13,12 @@ int i, j, t;
 
 i = (n - 1);
 
-while (i > j)
+while (i > n)
 {
 t = a[i];
 a[j] = a[i];
 a[j] = t;
 j--;
+i++;
 }
 }
