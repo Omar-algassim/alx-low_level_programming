@@ -13,7 +13,7 @@ int i, j, t;
 
 j = (n - 1);
 i = 0;
-while (i < j)
+while (i > j)
 {
 t = a[i];
 a[j] = a[i];
