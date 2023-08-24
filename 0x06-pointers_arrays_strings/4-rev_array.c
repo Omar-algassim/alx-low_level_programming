@@ -13,9 +13,10 @@ int i, j, t;
 j = n - 1;
 
 while (i > j)
+{
 t = a[i];
 a[j] = a[i];
 a[j] = t;
 j--;
+}}
 return (0);
-
