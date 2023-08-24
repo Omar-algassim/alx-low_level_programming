@@ -14,7 +14,7 @@ for (i = 0; s[i] != '\0'; i++)
 {
 	if (i <= 'a' && i >= 'z')
 	s[i] = s[i] - 32;
-	else
-		s[i];
+	
 }
+return (s);
 }
