@@ -14,5 +14,6 @@ while (n != 0)
 	_putchar(a[n]);
 	n--;
 }
+_putchar('\n');
 return (0);
 
