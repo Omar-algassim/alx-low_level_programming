@@ -20,11 +20,16 @@ for (j = 0; s2[j] != '\0'; j++)
 	j = v2;
 }
 if (v1 > v2)
+{
 	printf("15\n");
-if else(v1 < v2)
+}
+	if else(v1 < v2)
+{
 	printf("-15\n");
-else
+}
+	else
+{
 	printf("0\n");
-
+}
 return (0);
 }
