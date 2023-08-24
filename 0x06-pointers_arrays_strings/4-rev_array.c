@@ -16,9 +16,9 @@ i = 0;
 while (i < n)
 {
 t = a[i];
-a[j] = a[i];
-a[j--] = t;
-
+a[i] = a[j];
+a[j] = t;
+j--;
 i++;
 }
 }
