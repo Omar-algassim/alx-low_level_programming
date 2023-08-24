@@ -17,8 +17,8 @@ while (i < n)
 {
 t = a[i];
 a[j] = a[i];
-a[j] = t;
-j--;
+a[j--] = t;
+
 i++;
 }
 }
