@@ -8,7 +8,7 @@
  * Return:the value of dest
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncpy(char *dest, char *src, int n)
 {
 int i, j;
 
@@ -24,8 +24,7 @@ dest[i] = src[j];
 j++;
 i++;
 }
-
 dest[i] = '\0';
+
 return (dest);
 }
-"0-strcat.c" 29L, 337C                                                                                              29,1          All
