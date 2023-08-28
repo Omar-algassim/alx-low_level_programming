@@ -5,11 +5,12 @@
  * @s:pointed by constant
  * @n: number of byte
  * @b: constant b
+ * Return: value to s 
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-int i;
+unsigned int i;
 
 for (i = 0; i < n; i++)
 {
