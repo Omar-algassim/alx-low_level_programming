@@ -1,0 +1,4 @@
+#!/bin/bash
+git add .
+git commit -m 'pointer in pointer'
+git push
