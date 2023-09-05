@@ -23,7 +23,7 @@ if (s == 0)
 }
 for (i = 0; i <= p; i++)
 
-s[i] = str[i]
+s[i] = str[i];
 
 return (s);
 }
