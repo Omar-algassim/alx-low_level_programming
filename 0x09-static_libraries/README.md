@@ -1,1 +1,1 @@
-made archive file and static
+static libraries
