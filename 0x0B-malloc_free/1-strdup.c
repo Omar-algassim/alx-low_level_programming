@@ -16,7 +16,7 @@ if (str == 0)
 
 while (str[p])
 {
-	p++
+	p++;
 }
 s = malloc(sizeof(char) * (p + 1));
 	
