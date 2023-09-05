@@ -16,12 +16,12 @@ if (str == 0)
 
 while (str[p])
 {
-	s = malloc(sizeof(char) * (p + 1));
+	s = malloc(sizeof(char) * p);
 	p++;
 if (s == 0)
 	return (0);
 }
-for (i = 0; i <= p; i++)
+for (i = 0; str[i] != '\0'; i++)
 
 s[i] = str[i];
 
