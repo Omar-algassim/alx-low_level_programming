@@ -14,7 +14,7 @@ if (str == 0)
 	return (0);
 while (str[p])
 	p++;
-s = malloc(sizeof(char) * (p + 1));		
+s = malloc(sizeof(char) * (p + 1));
 if (s == NULL)
 	return (NULL);
 
