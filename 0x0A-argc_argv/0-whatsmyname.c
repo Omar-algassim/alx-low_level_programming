@@ -9,5 +9,6 @@
 
 int main(int argc, char *argv[])
 {
- _putchar("the program name is:%s \n", argv[0]);
+printf("the program name is:%s \n", argv);
+return (0);
 }
