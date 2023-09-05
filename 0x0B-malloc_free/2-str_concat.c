@@ -24,7 +24,7 @@ while (s1[i] || s1 != 0)
 }
 while (s2[j] || s2 != 0)
 {
-	c[i + j] = s2[j]
+	c[i + j] = s2[j];
 	j++;
 }
 
