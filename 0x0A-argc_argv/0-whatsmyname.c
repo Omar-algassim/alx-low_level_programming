@@ -9,5 +9,5 @@
 
 int main(int argc, char *argv[])
 {
-printf("the program name is:%s \n", argv[0]);
+ _putchar("the program name is:%s \n", argv[0]);
 }
