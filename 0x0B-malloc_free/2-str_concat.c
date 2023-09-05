@@ -25,7 +25,7 @@ while (s2[len2])
 {
 	len2++;
 }
-c = malloc(sizeof(char) * (len1 + len2 + 1))
+c = malloc(sizeof(char) * (len1 + len2 + 1));
 if (s1)
 
 {
