@@ -40,7 +40,7 @@ if (s2)
 {
 while (i < (len1 + len2))
 {
-	s3[i] = s2[j];
+	c[i] = s2[j];
 	i++;
 	j++;
 }
