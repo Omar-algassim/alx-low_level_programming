@@ -15,23 +15,18 @@ i = 0;
 j = 0;
 if (s1 == NULL || s2 == NULL)
 	return (0);
+c = malloc(sizeof(s1) + sizeof(s2));
 while (s1[i])
 {
+	c[i] = s1[i];
 	i++;
 }
 while (s2[j])
 {
+	c[i + j] = s2[j];
 	j++;
 }
 len = i + j;
-c = malloc(sizeof(char) * (len + 1));
-for (co1 = 0; s2[co1] != '\0'; co1++)
-{
-for(co2 = 0; s1[co2] != '\0'; co2++)
-{
-	c[co2] = s1[co2];
-}
-c[co1 + i] = s2[co2];
-}
+
 return (c);
 }
