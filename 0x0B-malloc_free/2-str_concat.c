@@ -16,17 +16,15 @@ j = 0;
 if (s1 == NULL || s2 == NULL)
 	return (0);
 c = malloc(sizeof(s1) + sizeof(s2) + 1);
-while (s1[i])
+while (s1[i] || s1 != 0)
 {
 	c[i] = s1[i];
 	
-		return (0);
 	i++;
 }
-while (s2[j])
+while (s2[j] || s2 != 0)
 {
-	
-	 if (s1 == NULL)
+	c[i + j] = s2[j]
 	j++;
 }
 
