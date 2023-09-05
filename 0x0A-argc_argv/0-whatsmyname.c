@@ -7,7 +7,7 @@
  * Return: always zero
  */
 
-int main(int argc, char *argv[])
+int main(int argc __attribute___((unused))), char *argv[])
 {
 printf("the program name is:%s \n", argv);
 return (0);
