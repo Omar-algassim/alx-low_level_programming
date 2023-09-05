@@ -9,6 +9,6 @@
 
 int main(int argc __attribute___((unused))), char *argv[])
 {
-printf("the program name is:%s \n", argv);
+_putchar("the program name is:%s \n", argv);
 return (0);
 }
