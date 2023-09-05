@@ -7,7 +7,7 @@
  * Return: always zero
  */
 
-int main(int argc __attribute___((unused))), char *argv[])
+int main(int argc __attribute___((unused)), char *argv[])
 {
 _putchar("the program name is:%s \n", argv);
 return (0);
