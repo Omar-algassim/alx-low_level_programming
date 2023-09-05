@@ -10,7 +10,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *c;
-	unsigned int i, j, len, co1, co2;
+	unsigned int i, j;
 i = 0;
 j = 0;
 if (s1 == NULL || s2 == NULL)
@@ -26,7 +26,6 @@ while (s2[j])
 	c[i + j] = s2[j];
 	j++;
 }
-len = i + j;
 
 return (c);
 }
