@@ -1,0 +1,1 @@
+memory allcoate function
