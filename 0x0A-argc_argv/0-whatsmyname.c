@@ -7,7 +7,7 @@
  * Return: always zero
  */
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
-printf ("the program name is:%c" , argv[0]);
+printf("the program name is:%s", argv[0]);
 }
