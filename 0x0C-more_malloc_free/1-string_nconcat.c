@@ -15,11 +15,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 len = 0;
 len1 = 0;
 	
-while (s1[len] || s1[len] != NULL)	
+while (s1[len])	
 {
 	len++;
 }
-while (s2[len1] || s2[len1] != NULL)
+while (s2[len1])
 {
 	len1++;
 }
@@ -29,5 +29,5 @@ len1 = n;
 }
 memo = malloc(sizeof(char) * (len + len1) + 1);
 
-return (memo);
-
+	return (memo);
+	}
