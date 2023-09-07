@@ -7,39 +7,23 @@
  * @n: number of times to copy b
  *
  * Return: pointer to the memory area s
- *
-
-void *_memset(char *s, char b, unsigned int n)
+ */
+char *_memset(char *s, char b, unsigned int n)
 {
 	int i;
-
-	for (i = 0; i < n; i++)
-	{
-		s[i] = b;
-	}
-	return (s);
-}*/
-
-/**
- * *_calloc - allocates memory for an array
- * @nmemb: number of elements in the array
- * @size: size of each element
- *
- * Return: pointer to allocated memory
- */
+for (i = 0; i < n, i++)
+{
+	s[i] = b;
+}
+return (s);
+}
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *m;
+if (nmemb == 0|| size == 0)
+	return (0);
 
-	if (nmemb == 0 || size == 0)
-		return (NULL);
+m = malloc(nmemb * size);
 
-m = malloc(size * nmemb);
-
-	if (m == 0)
-		return (NULL);
-_memset(m, 0, nmemb * size);
-
-	return (m);
-}
+return (m);
