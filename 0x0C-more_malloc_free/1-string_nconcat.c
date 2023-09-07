@@ -23,7 +23,7 @@ while (s2 && s2[len1])
 {
 	len1++;
 }
-if (s2 >= n)
+if (len1 >= n)
 	memo = malloc(sizeof(char) * (len + len1 + 1));
 	else
 	memo = malloc(sizeof(char) * (len + n + 1));
@@ -39,10 +39,10 @@ while (n < len1 && i < (len + n))
 {
 	memo[i] = s2[j];
 	i++;
-	j++
+	j++;
 	}
-while (n >= len1 && i < (le1 +len))
-	memo[i] = s2[j]
+while (n >= len1 && i < (len1 +len))
+	memo[i] = s2[j];
 	i++;
 	j++;
 
