@@ -16,20 +16,20 @@ len = 0;
 len1 = 0;
 i = 0;
 
-while (s1[len] != '\0')
+while(s1[len] != '\0')
 {
 	len++;
 }
-while (s2[len1] != '\0')
+while(s2[len1] != '\0')
 {
 	len1++;
 }
-if (n > len1)
-{
+if(n > len1)
+
 	m = malloc(sizeof(char) * (len + len1) + 1);
 	else
 	m = malloc(sizeof(char) * (len + n) + 1);
-}
+
 while (i <= len)
 	m[i] = s1[i];
 	i++;
