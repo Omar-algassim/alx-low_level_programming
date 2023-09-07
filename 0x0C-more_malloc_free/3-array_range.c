@@ -19,12 +19,9 @@ m = malloc(sizeof(int) * r);
 if (m == 0)
 	return (0);
 
-while (min >= max)
-{
-m[i] = min;
-	i++;
-	min++;
-}
+
+for (i = 0; min <= max; i++)
+		m[i] = min++;
 
 return (m);
 }	
