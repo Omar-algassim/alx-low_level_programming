@@ -11,26 +11,40 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *memo;
-	int len, len1;
+	int i, j, len, len1;
 len = 0;
 len1 = 0;
 	
-while (s1[len])	
+while (s1 && s1[len])	
 {
-	if (s1[len] != 0)
 	len++;
-memo = malloc(sizeof(char) * len + 1)
 }
-while (s2[len1])
+while (s2 && s2[len1])
 {
-	if(s2[]len1 != 0)
 	len1++;
-memo = malloc(sizeof(char) * len1 + 1)	
 }
-if (len1 >= n)
-{
-len1 = n;
-}
-memo = malloc(sizeof(char) * (len + len1) + 1);
+if (s2 >= n)
+	memo = malloc(sizeof(char) * (len + len1 + 1));
+	else
+	memo = malloc(sizeof(char) * (len + n + 1));
+if (!memo)
+	return (NULL);
 
+	while (i < len)
+{	
+	memo[i] = s1[i];
+	i++;
+}
+while (n < len1 && i < (len + n))
+{
+	memo[i] = s2[j];
+	i++;
+	j++
+	}
+while (n >= len1 && i < (le1 +len))
+	memo[i] = s2[j]
+	i++;
+	j++;
+
+	return(memo);
 }
