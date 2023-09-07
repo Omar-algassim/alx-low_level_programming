@@ -37,17 +37,13 @@ while (i <= len)
 	m[i] = s1[i];
 	i++;
 }
-while ((len1 + len) < i)
-{
-m[i] = s2[j];
-i++;
-j++;
-}
-while (n < len1 && i < (len1 + n))
-{
-	m[i] = s2[j];
-	i++;
-	j++;
-}
-return (m);
+while (n < len2 && i < (len1 + n))
+	m[i++] = s2[j++];
+
+while (n >= len2 && i < (len1 + len2))
+	m[i++] = s2[j++];
+
+	m[i] = '\0';
+
+	return (m);
 }
