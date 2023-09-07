@@ -30,8 +30,10 @@ if (memo == NULL)
 	return (NULL);
 
 	while (i < len)
+{
 	memo[i] = s1[i];
 	i++;
+}
 while (n < len1 && i < (len + n))
 	memo[i] = s2[j];
 	i++;
@@ -41,5 +43,6 @@ while (n >= len1 && i < (len1 + len))
 	memo[i] = s2[j];
 	i++;
 	j++;
-
+	
+return (memo);
 }
