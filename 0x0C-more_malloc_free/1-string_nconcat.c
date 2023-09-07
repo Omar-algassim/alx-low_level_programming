@@ -26,9 +26,9 @@ while (s2[len1] != '\0')
 }
 if (n > len1)
 
-	m = malloc(sizeof(char) * (len + len1) + 1);
-	else
-	m = malloc(sizeof(char) * (len + n) + 1);
+m = malloc(sizeof(char) * (len + len1) + 1);
+else
+m = malloc(sizeof(char) * (len + n) + 1);
 
 while (i <= len)
 {
@@ -49,6 +49,6 @@ while (len + n < i)
 	i++;
 	j++;
 }
-
+m[i] = '\0';
 return (m);
 }
