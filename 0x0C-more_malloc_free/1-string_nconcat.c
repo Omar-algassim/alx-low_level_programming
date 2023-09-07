@@ -37,6 +37,7 @@ while (i <= len)
 	m[i] = s1[i];
 	i++;
 }
+
 while (n < len2 && i < (len1 + n))
 	m[i++] = s2[j++];
 
