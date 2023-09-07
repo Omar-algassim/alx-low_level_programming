@@ -38,10 +38,10 @@ while (i <= len)
 	i++;
 }
 
-while (n < len2 && i < (len1 + n))
+while (n < len1 && i < (len + n))
 	m[i++] = s2[j++];
 
-while (n >= len2 && i < (len1 + len2))
+while (n >= len1 && i < (len + len1))
 	m[i++] = s2[j++];
 
 	m[i] = '\0';
