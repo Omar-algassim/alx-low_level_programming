@@ -44,10 +44,11 @@ j++;
 }
 if (n > len1)
 while (len + n < i)
+{
 	m[i] = s[j];
 	i++;
 	j++;
-
+}
 
 return (m);
 }
