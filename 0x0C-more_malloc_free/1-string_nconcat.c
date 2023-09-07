@@ -25,13 +25,12 @@ while (s2[len1])
 {
 	if(s2[]len1 != 0)
 	len1++;
-memo = realloc(sizeof(char) * len1 + 1)	
+memo = malloc(sizeof(char) * len1 + 1)	
 }
 if (len1 >= n)
 {
 len1 = n;
 }
-memo = realloc(sizeof(char) * (len + len1) + 1);
+memo = malloc(sizeof(char) * (len + len1) + 1);
 
-return (memo);
 }
