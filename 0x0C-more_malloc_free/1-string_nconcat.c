@@ -42,5 +42,4 @@ while (n >= len1 && i < (len1 + len))
 	i++;
 	j++;
 
-	return (memo);
 }
