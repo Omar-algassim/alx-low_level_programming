@@ -46,6 +46,6 @@ while (n < len1 && i < (len1 + n))
 	i++;
 	j++;
 }
-m[i] = '\0';
+
 return (m);
 }
