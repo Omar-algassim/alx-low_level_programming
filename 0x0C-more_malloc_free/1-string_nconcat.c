@@ -31,8 +31,9 @@ if(n > len1)
 	m = malloc(sizeof(char) * (len + n) + 1);
 
 while (i <= len)
+{
 	m[i] = s1[i];
 	i++;
-
-	return (m);
+}
+return (m);
 }
