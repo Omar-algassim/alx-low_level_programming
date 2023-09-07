@@ -26,4 +26,10 @@ if (nmemb == 0|| size == 0)
 
 m = malloc(nmemb * size);
 
+if (m == NULL)
+	return (NULL);
+
+_memset(m, 0, nmemb * size);
+
 return (m);
+}
