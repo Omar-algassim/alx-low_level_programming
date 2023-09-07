@@ -11,7 +11,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *memo;
-	int i, j, len, len1;
+	unsigned int i, j, len, len1;
 len = 0;
 len1 = 0;
 i = 0;
