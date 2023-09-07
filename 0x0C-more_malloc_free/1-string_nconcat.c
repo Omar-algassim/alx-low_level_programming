@@ -17,11 +17,12 @@ len1 = 0;
 i = 0;
 j = 0;
 
-while (s1 && s1[len])
+while (s1[len] != '\0')
 	len++;
-while (s2 && s2[len1])
+printf("%d\n", len);
+while (s2[len1] != '\0')
 	len1++;
-
+	printf("%d\n", len1);
 if (len1 >= n)
 	memo = malloc(sizeof(char) * (len + len1 + 1));
 	else
@@ -34,15 +35,18 @@ if (memo == NULL)
 	memo[i] = s1[i];
 	i++;
 }
-while (n < len1 && i < (len + n))
+if (n > len1)
+	
+while (i < (len + n))
 	memo[i] = s2[j];
 	i++;
 	j++;
-
-while (n >= len1 && i < (len1 + len))
+if (n < len1)
+while (i < (len1 + len))
 	memo[i] = s2[j];
 	i++;
 	j++;
 	
+memo[i] = '\0';
 return (memo);
 }
