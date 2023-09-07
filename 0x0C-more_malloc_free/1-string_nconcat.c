@@ -36,11 +36,18 @@ while (i <= len)
 	i++;
 }
 if (n <= len1)
-while (len1 < i)
+while (len1 + len < i)
 {
 m[i] = s2[j];
 i++;
 j++;
 }
+if (n > len1)
+while (len + n < i)
+	m[i] = s[j];
+	i++;
+	j++;
+
+
 return (m);
 }
