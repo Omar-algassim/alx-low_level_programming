@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * string_nconcat.c -  function that concatenates two strings.
+ * string_nconcat - function that concatenates two strings.
  * @s1: string number 1
  * @s2: string number 2
  * @n: number of byet
@@ -16,8 +16,8 @@ len = 0;
 len1 = 0;
 i = 0;
 j = 0;
-	
-while (s1 && s1[len])	
+
+while (s1 && s1[len])
 	len++;
 while (s2 && s2[len1])
 	len1++;
@@ -29,7 +29,7 @@ if (len1 >= n)
 if (memo == NULL)
 	return (NULL);
 
-	while (i < len)	
+	while (i < len)
 	memo[i] = s1[i];
 	i++;
 while (n < len1 && i < (len + n))
@@ -37,10 +37,10 @@ while (n < len1 && i < (len + n))
 	i++;
 	j++;
 
-while (n >= len1 && i < (len1 +len))
+while (n >= len1 && i < (len1 + len))
 	memo[i] = s2[j];
 	i++;
 	j++;
 
-	return(memo);
+	return (memo);
 }
