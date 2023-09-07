@@ -17,17 +17,21 @@ len1 = 0;
 	
 while (s1[len])	
 {
+	if (s1[len] != 0)
 	len++;
+memo = malloc(sizeof(char) * len + 1)
 }
 while (s2[len1])
 {
+	if(s2[]len1 != 0)
 	len1++;
+memo = realloc(sizeof(char) * len1 + 1)	
 }
 if (len1 >= n)
 {
 len1 = n;
 }
-memo = malloc(sizeof(char) * (len + len1) + 1);
+memo = realloc(sizeof(char) * (len + len1) + 1);
 
-	return (memo);
-	}
+return (memo);
+}
