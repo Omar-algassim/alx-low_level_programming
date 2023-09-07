@@ -41,12 +41,14 @@ while (i < (len + n))
 	memo[i] = s2[j];
 	i++;
 	j++;
-if (n < len1)
+	printf("%d\n", i);
+/*if (n < len1)
 while (i < (len1 + len))
 	memo[i] = s2[j];
 	i++;
 	j++;
-	
-memo[i] = '\0';
+printf("%d\n", i);	
+
+memo[i] = '\0';*/
 return (memo);
 }
