@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * *_memset - fills memory with a constant byte
  * @s: memory area to be filled
@@ -43,5 +43,3 @@ _memset(m, 0, nmemb * size);
 
 	return (m);
 }
-
-
