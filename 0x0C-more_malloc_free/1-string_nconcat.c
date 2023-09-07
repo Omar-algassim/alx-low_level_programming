@@ -45,7 +45,7 @@ j++;
 if (n > len1)
 while (len + n < i)
 {
-	m[i] = s[j];
+	m[i] = s2[j];
 	i++;
 	j++;
 }
