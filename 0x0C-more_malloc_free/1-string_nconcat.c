@@ -40,7 +40,7 @@ m[i] = s2[j];
 i++;
 j++;
 }
-while (n < len2 && i < (len1 + n))
+while (n < len1 && i < (len1 + n))
 {
 	m[i] = s2[j];
 	i++;
