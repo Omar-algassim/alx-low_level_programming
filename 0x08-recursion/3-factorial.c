@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * factorial - calculate the factorial of number
@@ -13,8 +14,8 @@ int factorial(int n)
 	}
 	if (n > 0)
 	{
-	n = n * (n - 1);
+	return (n = n * (n - 1));
 	factorial(n--);
 	}
-	return (n);
+	
 }
