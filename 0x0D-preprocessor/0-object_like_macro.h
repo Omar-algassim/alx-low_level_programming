@@ -1,10 +1,4 @@
-#include "main.h"
+#define OMAR_H
+#ifndef OMAR_H
 #define SIZE 1024
-/**
- * main - program define macro named
- * Return: always 0
-*/
-int main()
-{
-    return (0);
-}
+#endif
