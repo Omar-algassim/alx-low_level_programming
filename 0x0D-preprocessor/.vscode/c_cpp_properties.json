@@ -9,7 +9,9 @@
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
-            ]
+            ],
+            "compilerPath": "c:/Users/omar algassim/Documents/code/alx-low_level_programming/0x08-recursion/main.h",
+            "cStandard": "c99"
         }
     ],
     "version": 4
