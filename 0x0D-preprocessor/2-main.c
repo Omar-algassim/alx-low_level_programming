@@ -6,6 +6,6 @@
 */
 int main()
 {
-    printf("the program name: %s", __FILE__)/;
+    printf("the program name: %d", __FILE__)/;
     return (0);
 }
