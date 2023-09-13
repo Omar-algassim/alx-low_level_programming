@@ -3,7 +3,8 @@
  * int_index - to search for integer
  * @array: araay that search in
  * @size: size of array
- * @cmd: the function compare tow integer
+ * @cmp: the function compare tow integer
+ * Return: -1 if not same 1if its same
 */
 int int_index(int *array, int size, int (*cmp)(int))
 {
