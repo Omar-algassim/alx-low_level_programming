@@ -12,7 +12,7 @@ int i;
     return (-1);
 for (i = 0; i < size; i++)
 {
-cmd(array[i]);
+cmp(array[i]);
 return (i);
 }
 }
