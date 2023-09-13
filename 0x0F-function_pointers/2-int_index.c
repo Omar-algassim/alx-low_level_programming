@@ -15,4 +15,5 @@ for (i = 0; i < size; i++)
 cmp(array[i]);
 return (i);
 }
+return (-1);
 }
