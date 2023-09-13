@@ -9,7 +9,7 @@
  * @num2: number 2 to use
  * Return: the value of operation 
 */
-int main (int argc, int **argv)
+int main (int argc, char **argv)
 {
  int (*operator)(int, int), a, b;
 
