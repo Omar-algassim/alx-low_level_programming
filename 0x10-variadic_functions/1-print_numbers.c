@@ -14,7 +14,7 @@ va_start(num, n);
 for (i = 0; i < n; i++)
 {
     va_arg(num, int);
-printf("%d \n", num);
+printf("%s \n", num);
 va_end(num);
 }
 printf("\n");
