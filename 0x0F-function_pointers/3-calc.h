@@ -11,8 +11,8 @@
  */
 typedef struct op
 {
-    char *op;
-    int (*f)(int a, int b);
+	char *op;
+	int (*f)(int a, int b);
 } op_t;
 
 int (*get_op_func(char *s))(int, int);
@@ -23,3 +23,4 @@ int op_div(int a, int b);
 int op_mod(int a, int b);
 
 #endif
+
