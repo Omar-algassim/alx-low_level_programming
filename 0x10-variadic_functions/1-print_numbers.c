@@ -6,13 +6,14 @@
 */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-    int i;
+    unsigned int i;
 va_list num;
+
 if (separator != NULL)
 va_start(num, separator);
 for (i = 0; i < n; i++)
 {
-printf("%s \n", num);
+printf("%d \n", num);
 va_end(num);
 }
 printf("\n");
