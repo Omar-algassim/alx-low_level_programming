@@ -19,5 +19,5 @@ sum = 0;
         sum += va_arg (num, int);
         
 va_end (num);
-return (num);
+return (sum);
 }
