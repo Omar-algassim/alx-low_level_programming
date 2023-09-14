@@ -11,9 +11,10 @@ va_list num;
 
 if (separator != NULL)
 va_start(num, n);
-for (i = n; i >= 0; i = va_arg(num, int))
+for (i = 0; i <= 0; i++)
 {
-printf("%d, ", i);
+va_arg(num, int)
+printf("%d, ", va_arg(num, int));
 }
 va_end(num);
 printf("\n");
