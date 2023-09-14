@@ -16,6 +16,6 @@ for (i = 0; i <= n; i++)
 i = va_arg(num, int);
 printf("%d, ", i);
 }
-va_end(num)
+va_end(num);
 printf("\n");
 }
