@@ -13,7 +13,7 @@ if (separator != NULL)
 va_start(num, n);
 for (i = 0; i <= 0; i++)
 {
-va_arg(num, int)
+va_arg(num, int);
 printf("%d, ", va_arg(num, int));
 }
 va_end(num);
