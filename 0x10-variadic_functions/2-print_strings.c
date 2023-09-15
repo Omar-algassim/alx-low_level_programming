@@ -1,13 +1,13 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - prints numbers followed by a new line
+ * print_strings - prints numbers followed by a new line
  * @n: number of parameter
  * @separator: separator between two numbers
  * Return: Always 0
  */
 
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	char *str;
@@ -22,11 +22,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		str = va_arg(ap, char*);
 	if (str == 0)
-	printf("(nil)");	
+	printf("(nil)");
 printf("%s", str);
 		if (i < n - 1)
 			printf("%s", separator);
-		
 	}
 	printf("\n");
 	va_end(ap);
