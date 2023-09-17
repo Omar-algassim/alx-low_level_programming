@@ -8,7 +8,7 @@
  * Return: always 0
  */
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int a, b, r;
 
@@ -23,6 +23,6 @@ else
 	b = atoi(argv[2]);
 	r = a * b;
 	printf("%d\n", r);
-		return(0);
+		return (0);
 	}
 }
