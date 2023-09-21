@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_list - printthe - print all elemnt of struct
+ * print_list - print all elemnt of struct
  * @h:the elemnt saved in struct
  *
  * Return: the number of elemnt
@@ -9,7 +9,7 @@
 
 size_t print_list(const list_t *h)
 {
-	size_t  nodes = 0;
+	int  nodes = 0;
 
 	while (h)
 	{
@@ -17,10 +17,12 @@ size_t print_list(const list_t *h)
 		{
 			printf("[%d] %s\n", h->len, h->str);
 			nodes++;
-			h = h->next;
 		}
-		else 
+		else
+		{
 			printf("[0] (nail)\n");
+		}
+	h = h->next;
 	}
 	return (nodes);
 }
