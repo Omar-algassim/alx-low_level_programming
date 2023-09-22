@@ -16,13 +16,12 @@ list_t *add_node(list_t **head, const char *str)
 	len = 0;
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
-
 		return (NULL);
 
 	cpy = strdup(str);
 	if (cpy == NULL)
 	{
-		free (new);
+		free(new);
 		return (NULL);
 	}
 	while (str[len])
@@ -32,7 +31,6 @@ list_t *add_node(list_t **head, const char *str)
 	new->len = len;
 	new->next = *head;
 	}
-	*head = new;
-	
+*head = new;
 return (new);
 }
