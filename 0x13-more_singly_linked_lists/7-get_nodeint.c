@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * get_nodeint - return specific node
+ * get_nodeint_at_index - return specific node
  * @head: the head of linked list
  * @index: the number of wantted node
  * Return: the n node
@@ -12,11 +12,12 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	listint_t *temp;
 
 	temp = head;
-	if (!index)
+	if (!index && head == NULL)
 	{
 		return (NULL);
 	}
 	else
+	{
 	while (i != index)
 	{
 		temp = temp->next;
@@ -24,4 +25,4 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	}
 	return (temp);
 }
-
+}
