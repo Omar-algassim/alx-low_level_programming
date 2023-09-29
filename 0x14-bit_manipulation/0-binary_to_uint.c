@@ -15,7 +15,7 @@ unsigned int binary_to_uint(const char *b)
 	oct = 0;
 	hex = 1;
 
-	if (b == NULL)
+	if (b == NULL || *b > 63)
 		return (0);
 
 	while (i)
