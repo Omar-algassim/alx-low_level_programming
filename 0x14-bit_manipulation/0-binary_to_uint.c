@@ -24,7 +24,7 @@ unsigned int binary_to_uint(const char *b)
 		{
 			return (0);
 		}
-		if (b[i - 1] == '1')
+		else if (b[i - 1] == '1')
 		{
 			oct += hex;
 		}
