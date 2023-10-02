@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stddef.h>
 
 /**
  * *nwe_dog - creat new dog
@@ -8,7 +9,21 @@
  * Return: always 0
  */
 dog_t *new_dog(char *name, float age, char *owner)
+{
+struct new_dog {
+	name;
+	age;
+	owner;
+};
 
-	if (new_dog == NULL)
-	return (0);
+typedef struct new_dog p;
+
+if (p == NULL)
+	return (NULL);
+p->name;
+p->age;
+p->owner;
+
+}
+
 
