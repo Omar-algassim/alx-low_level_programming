@@ -3,7 +3,7 @@
 /**
  * clear_bit -  sets the value of a bit to 0 at a given index.
  * @n: the number want to set 0 in
- * @index: the index 
+ * @index: the index
  * Return: 1 if it worked, or -1 if an error occurred
  */
 
@@ -20,7 +20,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 		i++;
 	}
 
-	set = ~ set;
+	set = ~set;
 
 	*n = *n & set;
 return (1);
