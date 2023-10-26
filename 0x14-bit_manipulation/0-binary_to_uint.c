@@ -20,6 +20,8 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[i - 1] != '0' && b[i - 1] != '1')
 			return (0);
+		if (b[i - 1] == NULL)
+			return (0);
 		if (b[i - 1] == '1')
 		{
 			oct += hex;
