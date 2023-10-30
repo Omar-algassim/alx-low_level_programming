@@ -16,16 +16,25 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t op, re, wr;
 	
 	if (filename == NULL)
+	{
+		free(buff);
 		return (0);
+	}
 
 	op = open(filename, O_RDONLY);
+	
 	if (op == -1)
+	{
+		free(buff);
 		return (0);
+	}
+
 	re = read(op, buff, letters);
 
 	wr = write(1, buff, re);
 
 	close(op);
+	free(buff);
 	return (wr);
 }
 
