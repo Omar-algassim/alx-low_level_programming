@@ -17,7 +17,7 @@ int main(int ac, char **av)
 	}
 	f_from = open(av[1], O_RDONLY);
 	f_to = open(av[2], O_RDWR | O_CREAT | O_TRUNC, 0664);
-	while ((z = read(f_from, buff, 1024)) != 0)
+	do
 	{
 		z = read(f_from, buff, 1024);
 		if (z == -1 || f_from == -1)
@@ -31,7 +31,7 @@ int main(int ac, char **av)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
 			exit(99);
 		}
-	}
+	}while(z != 0);
 	c = close(f_from);
 	c1 = close(f_to);
 	if (c == -1 || c1 == -1)
