@@ -13,14 +13,29 @@ dlistint_t *perve = *head;
 dlistint_t *after = *head;
 unsigned int i = 0;
 
+if (index == 0)
+{
+if (after->next == NULL)
+*head = malloc(sizeof(dlistint_t));
+else
+*head = after->next;
+}
+else
+{
 after = current->next;
-
 while (current != NULL)
 {
 if (i == index)
 {
-perve->next = after;
+if (current->next == NULL)
+{
+current = NULL;
+perve->next = NULL;
+return (1);
+}
+if (current->next != NULL)
 after->prev = perve;
+perve->next = after;
 return (1);
 }
 if (i != 0)
@@ -30,6 +45,7 @@ perve = perve->next;
 after = after->next;
 current = current->next;
 i++;
+}
 }
 return (-1);
 }
