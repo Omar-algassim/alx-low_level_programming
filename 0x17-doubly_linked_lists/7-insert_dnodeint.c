@@ -15,6 +15,13 @@ dlistint_t *current = *h;
 unsigned int i = 0;
 
 new->n = n;
+if (idx == 0)
+{
+new->next = current;
+new->prev = NULL;
+new = *h;
+}
+
 while (current != NULL)
 {
 if (i == idx)
