@@ -32,6 +32,7 @@ else
 {
 new->next = current->next;
 new->prev = current;
+current->next->prev = new;
 current->next = new;
 return (new);
 }
