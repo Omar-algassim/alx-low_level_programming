@@ -18,6 +18,9 @@ if (idx == 0)
 add_dnodeint(h, n);
 else
 {
+while (current != NULL)
+current = current->prev;
+
 new->n = n;
 while (current != NULL)
 {
