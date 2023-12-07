@@ -14,15 +14,12 @@ dlistint_t *new = NULL;
 dlistint_t *current = *h;
 unsigned int i = 1;
 
-if (idx < 0)
-return (new);
-
 if (idx == 0)
 {
 new = add_dnodeint(h, n);
 return (new);
 }
-else
+else if (idx > 0)
 {
 while (current->prev != NULL)
 current = current->prev;
