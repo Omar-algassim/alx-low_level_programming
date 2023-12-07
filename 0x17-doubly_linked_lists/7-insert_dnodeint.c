@@ -16,11 +16,7 @@ unsigned int i = 0;
 
 new->n = n;
 if (idx == 0)
-{
-new->next = current;
-new->prev = NULL;
-new = *h;
-}
+add_dnodeint(h, n);
 
 while (current != NULL)
 {
@@ -34,5 +30,7 @@ return (new);
 current = current->next;
 i++;
 }
+if ((i + 1) == idx)
+add_dnodeint_end(h, n);
 return (NULL);
 }
