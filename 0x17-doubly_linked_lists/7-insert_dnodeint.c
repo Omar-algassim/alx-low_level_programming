@@ -41,5 +41,5 @@ current = current->next;
 i++;
 }
 }
-
+return (NULL);
 }
