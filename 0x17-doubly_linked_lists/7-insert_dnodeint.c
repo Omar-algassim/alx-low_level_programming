@@ -19,8 +19,9 @@ if (idx == 0)
 new = add_dnodeint(h, n);
 return (new);
 }
-else if (idx > 0)
+else
 {
+if (current != NULL)
 while (current->prev != NULL)
 current = current->prev;
 
@@ -39,6 +40,7 @@ new = malloc(sizeof(dlistint_t));
 new->n = n;
 new->next = current->next;
 new->prev = current;
+current->next->prev = new;
 current->next = new;
 return (new);
 }
