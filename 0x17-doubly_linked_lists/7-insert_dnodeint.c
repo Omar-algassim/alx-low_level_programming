@@ -14,23 +14,28 @@ dlistint_t *new = malloc(sizeof(dlistint_t));
 dlistint_t *current = *h;
 unsigned int i = 0;
 
-new->n = n;
 if (idx == 0)
 add_dnodeint(h, n);
-
+else
+{
+new->n = n;
 while (current != NULL)
 {
 if (i == idx)
+{
+if (current->next == NULL)
+add_dnodeint_end(h, n);
+else
 {
 new->next = current->next;
 new->prev = current;
 current->next = new;
 return (new);
 }
+}
 current = current->next;
 i++;
 }
-if ((i + 1) == idx)
-add_dnodeint_end(h, n);
+}
 return (NULL);
 }
