@@ -21,7 +21,6 @@ else
 while (current != NULL)
 current = current->prev;
 
-new->n = n;
 while (current != NULL)
 {
 if (i == idx)
@@ -30,6 +29,7 @@ if (current->next == NULL)
 add_dnodeint_end(h, n);
 else
 {
+new->n = n;
 new->next = current->next;
 new->prev = current;
 current->next->prev = new;
