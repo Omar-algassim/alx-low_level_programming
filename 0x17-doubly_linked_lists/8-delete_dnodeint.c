@@ -21,6 +21,7 @@ if (index == 0)
 	if (current->next != NULL)
 		current->next->prev = NULL;
 	free(current);
+	return (1);
 }
 else
 {
