@@ -34,9 +34,9 @@ else
 				perve->next = NULL;
 				return (1);
 			}
-			if (current->next != NULL)
-				after->prev = perve;
+			after->prev = perve;
 			perve->next = after;
+            free(current);
 			return (1);
 		}
 		if (i != 0)
