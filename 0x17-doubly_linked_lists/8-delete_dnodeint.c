@@ -30,10 +30,10 @@ else
 	{
 		if (i == index)
 		{
-			perve->next = after;
+			perve->next = current->next;
 			after->prev = perve;
 			if (current->next != NULL)
-				after->next = perve;
+				after->prev = perve;
 			free(current);
 			return (1);
 		}
