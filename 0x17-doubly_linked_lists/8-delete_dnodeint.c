@@ -25,11 +25,11 @@ if (index == 0)
 }
 else
 {
-	after = current->next;
 	while (current != NULL)
 	{
 		if (i == index)
 		{
+			after = current->next;
 			perve->next = after;
 			if (current->next != NULL)
 				after->prev = perve;
@@ -37,7 +37,6 @@ else
 			return (1);
 		}
 		perve = current;
-		after = after->next;
 		current = current->next;
 		i++;
 	}
