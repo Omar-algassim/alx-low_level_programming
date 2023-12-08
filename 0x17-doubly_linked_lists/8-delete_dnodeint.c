@@ -33,7 +33,7 @@ else
 			perve->next = NULL;
 			after->prev = perve;
 			if (current->next != NULL)
-				perve->next = after;
+				after->next = perve;
 			free(current);
 			return (1);
 		}
