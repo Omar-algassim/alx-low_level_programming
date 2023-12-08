@@ -20,6 +20,7 @@ if (index == 0)
 	*head = current->next;
 	if (current->next != NULL)
 		current->next->prev = NULL;
+	free(current);
 }
 else
 {
@@ -30,17 +31,16 @@ else
 		{
 			if (current->next == NULL)
 			{
-				current = NULL;
 				perve->next = NULL;
+				free(current);
 				return (1);
 			}
 			after->prev = perve;
 			perve->next = after;
-            free(current);
+			free(current);
 			return (1);
 		}
-		if (i != 0)
-			perve = perve->next;
+		perve = current;
 		after = after->next;
 		current = current->next;
 		i++;
