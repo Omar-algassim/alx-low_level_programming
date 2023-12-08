@@ -30,7 +30,7 @@ else
 	{
 		if (i == index)
 		{
-			perve->next = NULL;
+			perve->next = after;
 			after->prev = perve;
 			if (current->next != NULL)
 				after->next = perve;
