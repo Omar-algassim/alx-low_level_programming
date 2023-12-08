@@ -18,8 +18,8 @@ return (-1);
 if (index == 0)
 {
 	*head = current->next;
-	if (current->next == NULL)
-		current = NULL;
+	if (current->next != NULL)
+		current->next->prev = NULL;
 }
 else
 {
@@ -40,9 +40,7 @@ else
 			return (1);
 		}
 		if (i != 0)
-		{
 			perve = perve->next;
-		}
 		after = after->next;
 		current = current->next;
 		i++;
