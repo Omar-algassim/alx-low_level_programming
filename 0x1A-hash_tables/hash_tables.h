@@ -38,5 +38,5 @@ typedef struct hash_table_s
 
 hash_table_t *hash_table_create(unsigned long int size);
 void hash_table_delete(hash_table_t *ht);
-
+unsigned long int hash_djb2(const unsigned char *str);
 #endif
