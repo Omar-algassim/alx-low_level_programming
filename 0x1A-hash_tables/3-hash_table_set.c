@@ -17,7 +17,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	test = ht->array[index];
 
 	if (ht == NULL || *key == '\n' || *value == '\n')
-			return (0);
+		return (0);
 
 	if (test == NULL)
 	{
