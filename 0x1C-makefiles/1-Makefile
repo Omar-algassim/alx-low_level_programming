@@ -1,7 +1,9 @@
+all: create
+
 CC = gcc
 
 SRC = $(wildcard *.c)
 
-all:
+create:
 	${CC} ${SRC} -o school
 
