@@ -6,8 +6,6 @@ def island_perimeter(grid):
     """ calculate the perimeter of island in grid"""
 
     perimeter = 0
-    # horizontal = -1
-    vertical = -1
     horizontal = len(grid[0])
     vertical = len(grid)
     for i in range(vertical):
