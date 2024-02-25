@@ -8,31 +8,20 @@ def island_perimeter(grid):
     perimeter = 0
     horizontal = -1
     vertical = -1
-
     for row in grid:
+        vertical = -1
         horizontal += 1
         for item in row:
             vertical += 1
             if item == 1:
                 cell = 1
-                perimeter = 3
-                while cell != 0:
-                    if grid[horizontal - 1][vertical] == 1:
-                        perimeter += 2
-                        cell = grid[horizontal - 1][vertical]
-                        horizontal -= 1
-                    elif grid[horizontal + 1][vertical] == 1:
-                        perimeter += 2
-                        cell = grid[horizontal + 1][vertical]
-                        horizontal += 1
-                    elif grid[horizontal][vertical - 1] == 1:
-                        perimeter += 2
-                        cell = grid[horizontal][vertical - 1]
-                        vertical -= 1
-                    elif grid[horizontal][vertical + 1]:
-                        perimeter += 2
-                        cell = grid[horizontal][vertical + 1]
-                        vertical += 1
-                    elif:
-                        cell = 0
+                perimeter += 4
+                if grid[horizontal - 1][vertical] == 1:
+                            perimeter -= 1
+                if grid[horizontal + 1][vertical] == 1:
+                        perimeter -= 1
+                if grid[horizontal][vertical - 1] == 1:
+                            perimeter -= 1
+                if grid[horizontal][vertical + 1] == 1:
+                            perimeter -= 1
     return perimeter
