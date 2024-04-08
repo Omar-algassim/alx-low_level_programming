@@ -6,33 +6,14 @@ def island_perimeter(grid):
     """ calculate the perimeter of island in grid"""
 
     perimeter = 0
-    horizontal = -1
-    vertical = -1
-
-    for row in grid:
-        horizontal += 1
-        for item in row:
-            vertical += 1
-            if item == 1:
-                cell = 1
-                perimeter = 3
-                while cell != 0:
-                    if grid[horizontal - 1][vertical] == 1:
-                        perimeter += 2
-                        cell = grid[horizontal - 1][vertical]
-                        horizontal -= 1
-                    elif grid[horizontal + 1][vertical] == 1:
-                        perimeter += 2
-                        cell = grid[horizontal + 1][vertical]
-                        horizontal += 1
-                    elif grid[horizontal][vertical - 1] == 1:
-                        perimeter += 2
-                        cell = grid[horizontal][vertical - 1]
-                        vertical -= 1
-                    elif grid[horizontal][vertical + 1]:
-                        perimeter += 2
-                        cell = grid[horizontal][vertical + 1]
-                        vertical += 1
-                    elif:
-                        cell = 0
+    horizontal = len(grid[0])
+    vertical = len(grid)
+    for i in range(vertical):
+        for j in range(horizontal):
+            if grid[i][j] == 1:
+                perimeter += 4
+                if i > 0 and grid[i][j - 1] == 1:
+                    perimeter -= 2
+                if j > 0 and grid[i - 1][j] == 1:
+                    perimeter -= 2
     return perimeter
