@@ -6,7 +6,7 @@
  * @array: the array will search in
  * @size: size of array search in
  * @value: the number want to retrive
- * Retrun: the index of value or -1 in fail
+ * Return: the index of value or -1 in fail
  */
 int linear_search(int *array, size_t size, int value)
 {
