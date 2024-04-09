@@ -8,7 +8,7 @@
  * print_array - print all element in array
  * @index: index begin to print
  * @array: array want to print
- * @size: the size of array 
+ * @size: the size of array
  * Return: nothing
  */
 
@@ -29,11 +29,12 @@ void print_array(int *array, size_t size, size_t index)
 }
 
 /**
- * binary_search - searches for a value in a sorted array of integers using the Binary search algorithm
+ * binary_search - searches for a value in a sorted
+ * array of integers using the Binary search algorithm
  * @array: a pointer to the first element of the array to search in
  * @size:  is the number of elements in array
  * @value: is the value to search for
- * Return: if value is not present in array or if array is NULL, your function must return -1
+ * Return: if value is not present in array or if array is NULL, must return -1
  */
 
 int binary_search(int *array, size_t size, int value)
