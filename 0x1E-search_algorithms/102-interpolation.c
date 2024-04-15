@@ -12,12 +12,12 @@
  */
 size_t prop_position(int *array, size_t high, size_t low, int value)
 {
-	size_t pos;
+	size_t pos, f;
 
 	if (array == NULL)
 		return (-1);
-	pos = low + (((double)(high - low) / (array[high] - array[low])) * (value - array[low]));
-	printf("%lu \n", pos);
+	f = (double)(high - low) / ((array[high] - array[low])) * ((value - array[low]));
+	pos = (size_t)(low + f);
 	return (pos);
 }
 
@@ -37,19 +37,23 @@ int interpolation_search(int *array, size_t size, int value)
 	size_t high = array[size - 1];
 	size_t pos = prop_position(array, high, low, value);
 
+	if (pos > size)
+	{
+		printf("Value checked array[%lu] is out of range\n", pos);
+		return (-1);
+	}
 	while ((array[low] < array[high]) && (array[low] <= value) && (value <= array[high]))
 	{
 		printf("Value checked array[%lu] = [%d]\n", pos, array[pos]);
 		if (array[pos] == value)
 			return (pos);
 		if (array[pos] > value)
-			high = pos;
+			high = pos - 1;
 		if (array[pos] < value)
-			low = pos;
+			low = pos + 1;
 		else
 			return (pos);
 		pos = prop_position(array, high, low, value);
 	}
-printf("Value checked array[%lu] is out of range\n", pos);
 return (-1);
 }
